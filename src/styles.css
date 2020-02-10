@@ -1,5 +1,30 @@
-div.one {
-    background-color: lightgray;
-    border-top: solid;
-    border-left: solid;
+.jumbotron {
+    position: relative;
+    background-image: url(./assets/img/jeringa.jpg);
+    background-size: 28%;
+    animation: movimiento 15s infinite linear alternate;
+    border: solid;
+}
+
+div.card {
+    border: solid;
+}
+
+@keyframes movimiento {
+    from {
+        background-position: bottom right;
+    }
+    to {
+        background-position: top left;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }

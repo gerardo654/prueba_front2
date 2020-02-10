@@ -10,7 +10,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { PersonaComponent } from './components/persona/persona.component';
 import { MapaComponent } from './components/mapa/mapa.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
-
+// import { FlexLayoutModule } from '@angular/flex-layout';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,9 @@ import { ContactoComponent } from './components/contacto/contacto.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    APP_ROUTING
+    APP_ROUTING,
+    // FlexLayoutModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
